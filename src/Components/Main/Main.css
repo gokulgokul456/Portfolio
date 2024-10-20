@@ -1,0 +1,161 @@
+.Bio{
+    width: 65vw;
+    height: 90vh;
+    /* background-color:gray; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.Bio1{
+    margin-bottom: 25px;
+}
+.Bio1 h1{
+    font-size: 20px;
+}
+.Bio2{
+    font-size:45px;
+    color: white;
+    margin-bottom: 25px;
+}
+.Bio2 h1{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgb(208,210,214);
+}
+.Bio3{
+    font-size:50px;
+    color: white;
+    margin-bottom: 25px;
+
+}
+.Bio4{
+    color: rgb(212,214,218);
+    /* background-color: black; */
+    font-size: 17px;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+    line-height: 38px;
+    word-spacing: 2px;
+}
+.left{
+    width: 30vw;
+    height: 90vh;
+    /* background-color: black; */
+}
+ .CV a{
+    text-decoration: none;
+    color: white;
+    /* background-color: red; */
+}
+.right{
+    position: relative;
+    width: 30vw;
+    height: 80vh;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.right img{
+    width: 30vw;
+    height: 60vh;
+    /* border: 2px solid rgb(212,214,218); */
+    /* background-color: white; */
+}
+.bottom{
+    background-color: rgb(253,96,53);
+    color: white;
+    width: 25%;
+    height: 35px;
+    position: absolute;
+    left: 20px;
+    bottom: 85px;
+    left: 50px;
+    border-radius: 20px;
+    border: none;
+    animation: scroll 3s infinite;
+}
+@keyframes scroll {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+
+    }
+}
+.top{
+    background-color:rgb(33,37,41);
+    width: 25%;
+    height: 35px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    animation: scroll 3s infinite;
+}
+.CV button{
+    
+    background-color: rgb(66,70,73);
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+.CV button span{
+    padding: 10px;
+    border-radius: 100px;
+    background-color: rgb(253,96,53);
+    color: black;
+    margin-left: 10px;
+    transform: rotate(-45deg);
+}
+.CV button:hover span{
+    transform: rotate(0deg);
+}
+
+@media (max-width: 768px) {  
+    .Bio { 
+      flex-direction: column; 
+      width: 100vw; 
+      height: auto; 
+      margin-top: 120px;
+      /* background-color: red; */
+    } 
+    .left, .right { 
+      width: 100vw; 
+      height: auto; 
+    } 
+    .right { 
+      border-left: none; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      padding: 20px; /* Add padding to center image */ 
+    } 
+    .right img { 
+      width: 80vw; 
+      height: auto; /* Make image responsive to screen width */ 
+    } 
+    .bottom, .top { 
+      width: 35%; /* Adjust width for mobile */ 
+    } 
+    .bottom { 
+      bottom: 20px; /* Adjust bottom position */ 
+    } 
+    .top { 
+      top: 50px; /* Adjust top position */ 
+    } 
+    .CV button { 
+      width: 50%; /* Adjust button width */ 
+      margin: 20px auto; /* Center button */ 
+    } 
+    
+  }

@@ -1,0 +1,171 @@
+.About{
+    width: 65vw;
+    height: 65vh;
+    /* background-color:gray; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-top: 10%; */
+    margin-bottom: 10%;
+    
+}
+.name{
+    width: 65vw;
+    height: 100px;
+    /* background-color: black; */
+    border-top: 1px solid grey;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+.name h6{
+    font-size: 40px;
+    color: white;
+}
+.lft{
+    width: 65vw;
+    height: 65vh;
+    /* background-color: whitesmoke; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: 2px solid grey; */
+}
+.lft img{
+    width: 90%;
+    height: 90%;
+}
+.ryt{
+    width: 30vw;
+    height: 65vh;
+    /* background-color:yellowgreen; */
+    
+}
+.ryt-1{
+    width: 30vw;
+    height: 30%;
+    /* background-color: white; */
+    color:rgb(212,214,218);
+    word-spacing: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 15%;
+}
+.ryt-2{
+    width: 30vw;
+    height: 45px;
+    /* background-color: red; */
+    color: rgb(212,214,218);
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    word-spacing: 10px;
+}
+.ryt-3{
+    width: 30vw;
+    height: 10%;
+    /* background-color: white; */
+    color: rgb(212,214,218);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 17px;
+}
+.ryt-3 span{
+    color: rgb(177,72,44);
+}
+.ryt-4{
+    width: 30vw;
+    height: 10%;
+    /* background-color: white; */
+    color: rgb(212,214,218);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 17px;
+}
+.ryt-4 span{
+    color: rgb(177,72,44);
+}
+.ryt-btn{
+    margin-top: 20px;
+
+}
+.ryt-btn button{
+    
+    background-color: rgb(66,70,73);
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+.ryt-btn button span{
+    padding: 10px;
+    border-radius: 100px;
+    background-color: rgb(253,96,53);
+    color: black;
+    margin-left: 10px;
+    transform: rotate(-45deg);
+}
+.ryt-btn button:hover span{
+    transform: rotate(0deg);
+}
+
+@media (max-width: 768px) {  
+    .About { 
+      flex-direction: column; /* Stack elements vertically */ 
+      width: 90vw; /* Adjust container width as needed */ 
+      height: auto; 
+      margin: 0 auto; 
+    } 
+    .name { 
+      width: 90vw; 
+      height: auto; /* Adjust height as needed */ 
+      margin-top: 20px; /* Add spacing between elements */ 
+    } 
+    .lft { 
+      width: 90vw; 
+      height: auto; /* Adjust height as needed */ 
+      margin-top: 20px; /* Add spacing between elements */ 
+    } 
+    .lft img { 
+      width: 90%; /* Adjust image width as needed */ 
+      height: auto; /* Maintain aspect ratio */ 
+    } 
+    .ryt { 
+      width: 90vw; 
+      height: auto; /* Adjust height as needed */ 
+      margin-top: 20px; /* Add spacing between elements */ 
+    } 
+    .ryt-1{
+        width: 90vw;
+    }
+    .ryt-2{
+        width: 90vw; /* Adjust width as needed */ 
+      text-align: center;
+
+    } 
+    .ryt-3, 
+    .ryt-4 { 
+      width: 90vw; /* Adjust width as needed */ 
+      text-align: center; /* Center text on smaller screens */ 
+    } 
+    .ryt-btn { 
+      width: 90vw; /* Adjust width as needed */ 
+      margin: 20px auto; /* Center the button */
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+    } 
+    .ryt-btn button { 
+      width: 70%; /* Make button full width */ 
+      justify-content: center; /* Center content within button */ 
+    } 
+  }

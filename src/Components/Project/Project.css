@@ -1,0 +1,48 @@
+.parent{
+        width: 65vw;
+        height: 65vh;
+        /* background-color:gray; */
+        margin: 0 auto;
+        margin-bottom: 10%; 
+        display: flex;
+}
+.pro1{
+        width: 50%;
+        height: 100%;
+        /* background-color: rebeccapurple; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+}
+.pro1 a{
+        color: rgb(212,214,182);
+        text-decoration: none;
+}
+.pro1 img{
+        width: 50%;
+        height: 50%;
+}
+.pro2{
+        width: 50%;
+        height: 100%;
+        /* background-color: rgb(13, 13, 14); */
+}
+@media (max-width: 768px) {
+        .parent {
+            flex-direction: column; /* Stack children vertically */
+            height: auto; /* Allow height to adjust */
+        }
+    
+        .pro1,
+        .pro2 {
+            width: 100%; /* Full width on mobile */
+            height: auto; /* Allow height to adjust */
+        }
+    
+        .pro1 img {
+            width: 80%; /* Adjust image width for better mobile view */
+            height: auto; /* Maintain aspect ratio */
+        }
+    }
